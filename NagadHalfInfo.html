@@ -1,0 +1,124 @@
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Stylish API Fetcher with PHP</title> 
+  <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 380px;
+            width: 100%;
+            backdrop-filter: blur(8px);
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            font-weight: 700;
+            color: #fffb;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1em;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="number"]::placeholder {
+            color: #ddd;
+        }
+
+        input[type="number"]:focus {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        button {
+            width: 48%;
+            padding: 12px;
+            margin: 5px 1%;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-info {
+            background-color: #28a745;
+        }
+
+        .btn-info:hover {
+            background-color: #218838;
+        }
+
+        .btn-join {
+            background-color: #007bff;
+        }
+
+        .btn-join:hover {
+            background-color: #0069d9;
+        }
+
+        .response-box {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            font-size: 1em;
+            line-height: 1.5;
+            color: #fffc;
+            text-align: left;
+        }
+
+        .response-box p {
+            margin: 8px 0;
+        }
+
+        .response-key {
+            font-weight: bold;
+            color: #ffdd57;
+        }
+
+        .response-value {
+            color: #fff;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <h2>🌟 Get Info &amp; Join Channel 🌟</h2> 
+   <form method="POST"> 
+    <input type="number" name="number" placeholder="📞 Enter Number Here" required> 
+    <div> 
+     <button class="btn-info" type="submit" name="getInfo">🔍 Get Info</button> 
+     <button class="btn-join" onclick="window.open('https://t.me/NeonNexus69', '_blank')">💬 Join Channel</button> 
+    </div> 
+   </form> 
+  </div> 
+ </body>
+</html>
